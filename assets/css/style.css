@@ -39,17 +39,20 @@ body{
 
 /*  Home Section  */
 
-/* .navigationsmenu{
-  
-width: 100%;
+.navigationsmenu{  
+    width: 100%;
     height: 95px;   
-    background-color: #222;  
-  }  */
+    /* background-color: #222;   */
+    /* position: fixed; */
+    /* top: 0; */
+    background: transparent;
+    width: 100%;
+  } 
 
 .topnav a
  {
   /* color:  #bcbcbc; */
-  color: 	#50C878;
+  color: 	#10c9c3;
   /* color: #bcbcbc; */
   transition: all .4s ease-out;
 }
@@ -57,7 +60,8 @@ width: 100%;
 
 .topnav a:hover {
   /* color:  #bcbcbc; */
-  color: #10c9c3;
+  /* color: #10c9c3; */
+  color: red;
 }
 
 /* .navigationsmenu .topnav{
@@ -90,6 +94,17 @@ width: 100%;
 }
 .nav-link:first-child{
     margin-left: 0px;
+}
+
+.navbar-brand{
+  font-family: 'Yesteryear', cursive;
+  font-size: 35px;
+  font-weight: 400;
+  color: #bcbcbc;
+  transition: all .4s ease-out;
+}
+.navbar-brand:hover{
+  color: #10c9c3;
 }
 
 
@@ -136,19 +151,21 @@ width: 100%;
 }
 
 .button1{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500; 
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif; 
   color: #fff;  
   background: #10c9c3;
-  transition: all 0.4s ease-out;
+  transition: all .4s ease-out;
   /* padding: 25px 33px;  */
-  border: none;
+  padding: 10px 24px;
+  border: 1px solid transparent;  
 }
 
 .button1:hover{
   color: #10c9c3;
+  border: 1px solid #10c9c3;
   background: #fff;
 }
 /* .button1{  
