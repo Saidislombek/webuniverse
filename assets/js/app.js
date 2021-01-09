@@ -1,3 +1,16 @@
+  // фон навигационной панели появляться при прокрутке вниз, но исчезать при прокрутке вверх
+  var a = $(".navigationsmenu").offset().top;
+
+  $(document).scroll(function(){
+      if($(this).scrollTop() > a)
+      {   
+         $('.navigationsmenu').css({"background":"#222"});
+      } else {
+         $('.navigationsmenu').css({"background":"transparent"});
+      }
+  });
+  
+
 /* Animated Scroll Down to Anchor */
 document.addEventListener('DOMContentLoaded', function(){
   const easeFunctions = {
@@ -19,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 });
 
+
+
+
+
 // плагина masked input
 $.mask.definitions['9'] = '';
 $.mask.definitions['d'] = '[0-9]';
@@ -30,3 +47,4 @@ $("#tel-input").mask("+998 (dd) ddd-dd-dd");
     ringSize: 10,
     ringClickSize: 8
   });
+
